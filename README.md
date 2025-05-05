@@ -5,7 +5,7 @@ Current workflow:
 3. Launch my api fork locally
 4. [Optional] adjust mappools using my fork of mod-client and test:test user
 5. Launch my client fork locally, (twice), using test:test and test2:test2 users
-6. Adjust vetoes, launch matchmaker, see how everything works (Reduce time between matches if needed, done on the server side, i didnt push it to my fork)
+6. Adjust vetoes, launch matchmaker, see how everything works
 
 # Tilt Stack
 This repository aims to provide a ready-to-go [Tilt](https://docs.tilt.dev/) setup for ephemeral FAF infrastructure local development on kubernetes.

@@ -38,7 +38,7 @@ spec:
   template:
     spec:
       containers:
-        - image: faforever/faf-db-migrations:v133
+        - image: faforever/faf-db-migrations:v136
           name: faf-db-migrate
           args: ["migrate", "-url=jdbc:mysql://faf-db/faf?useSSL=false", "-user=root", "-password="]
           ttlSecondsAfterFinished: "0"

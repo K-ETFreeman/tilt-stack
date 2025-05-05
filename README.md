@@ -1,3 +1,12 @@
+This particular fork is made just as temporary solution for testing veto system. 
+Current workflow: 
+1. Launch kubernetes (reset cluster if needed; can be needed to not cause issues with id-duplicates errors in populate database)
+2. Disable api, ice breaker and traefik deployment in tilt (they mess up with api launching locally)
+3. Launch my api fork locally
+4. [Optional] adjust mappools using my fork of mod-client and test:test user
+5. Launch my client fork locally, (twice), using test:test and test2:test2 users
+6. Adjust vetoes, launch matchmaker, see how everything works (Reduce time between matches if needed, done on the server side, i didnt push it to my fork)
+
 # Tilt Stack
 This repository aims to provide a ready-to-go [Tilt](https://docs.tilt.dev/) setup for ephemeral FAF infrastructure local development on kubernetes.
 
